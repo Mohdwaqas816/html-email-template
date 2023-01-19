@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Design</title>
+    <style>
+         @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Roboto+Condensed:ital,wght@1,300&display=swap');
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body{
+            font-family: 'Poppins', sans-serif;
+            background-color: #d8dada;
+            font-size: 19px;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 3%;
+        }
+        .wrapper{
+            background-color: #fff;
+        }
+        .header-image{
+            max-width: 100%;
+            width: 100%;
+            margin-bottom: 0;
+        }
+        /* upper logo  */
+        .nav a img{
+            max-width: 120px;
+            width: 130px;
+            height: 40px;
+            margin: 2% 0 2% 4%;
+        
+        }
+
+        /* fig caption  */
+        .figure {
+            background-color: #ffc507;
+            color: #000000;
+            text-align: center;
+        }
+        .figure p{
+            margin-top: -6px;
+            color: #353535;
+            font-weight: 600;
+            padding: 6px;
+            letter-spacing: 1.2px;
+        }
+
+        .container{
+            max-width: 750px;
+            margin: 20px 10px 20px 35px;
+        }
+        /* introduction para  */
+        .introduction p{
+            font-size: 16px;
+            color: steelblue;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+
+        /* quality heading   */
+        .quality-heading{
+            text-align: center;
+            color: rgb(33, 102, 148);
+            font-weight: bolder;
+            margin-bottom: 15px;
+        }
+        .list-items{
+            display: flex;
+            margin-left: 16px;
+            justify-content: space-around;   
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        ul li a{
+            text-decoration: none;
+            color: steelblue;
+            font-size: 16px;
+            font-weight: 600;
+        }
+        li::marker{
+            font-size: 12px;
+            color: steelblue;
+        }
+
+        .product-images{
+            text-align: end;
+            max-width: 230px;
+            margin-bottom: 15px;
+        }
+        .product-images img{
+            max-width: 100%;
+            width: 220px;
+            height: 160px;
+        }
+        .training-solution{
+            margin-left: 18px;
+        }
+        .training{
+            margin-bottom: 15px;
+        }
+
+        /* advance services   */
+        .advance-services-solution{
+            margin-left: 18px;
+        }
+        .advance-services{
+            margin-bottom: 15px;
+        }
+
+        /* roll alignment services  */
+        .roll-alignment{
+            background-color: #000000;
+            color: whitesmoke;
+            padding: 20px 10px 10px 40px;
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+        .roll-alignment h3{
+            color: #ffc507;
+            margin-bottom: 5px;
+        }
+        .paralign-services{
+            display: flex;
+            margin-bottom: 20px;
+            align-items: center;
+            gap: 10px;
+            max-width: 765px;
+
+    
+
+        }
+        .paralign-services img{
+            max-width: 200px;
+            height: 150px;
+            border-radius: 3% 3% 20% 3%;
+            border-right: 3px solid goldenrod;
+            border-bottom: 3px solid goldenrod;
+           
+        }
+        .paralign-services p{
+            max-width: 522px;
+        }
+        .condition-monitoring{
+            margin-bottom: 30px;
+            margin-top: 20px;
+            padding: 10px;
+
+        }
+        .condition-monitoring h3{
+            margin-bottom: 10px;
+        }
+          
+        .monitoring{
+            margin-left: 18px;
+            display: flex;
+            justify-content: space-between;
+        }
+        .monitoring img{
+            max-width: 200px;
+            height: 150px;
+            border-radius: 3% 3% 20% 3%;
+            border-right: 3px solid goldenrod;
+            border-bottom: 3px solid goldenrod;
+
+        }
+        .enquire-btn {
+                background-color: #e9cb21;
+                color: black;
+                padding: 5px 30px;
+                text-decoration: none;
+                text-align: center;
+                font-size: 1rem;
+                font-weight: bold;
+                 border-radius: 5px;
+                
+            }   
+        .btn{
+            margin-top: 20px;
+            text-align: center;
+           
+        }
+        .more-info{
+            display: flex;
+            margin-top: 15px;
+            justify-content: space-between;
+            padding: 10px;
+            font-size: 1rem;
+        }
+        .social ul{
+            list-style: none;
+            display: flex;
+        }
+        .social ul li{
+            padding: 5px;
+        }
+        .end-footer{
+            background-color: gray;
+            color: whitesmoke;
+            padding: 10px 30px 10px 0px;
+            text-align: right;
+            font-size: small;
+            
+        }
+        span{
+            color: rgb(63, 63, 63);
+        }
+        span a{
+            text-decoration: none;
+            color: rgb(63, 63, 63);
+        }
+
+        @media screen and (max-width: 568px){
+            .more-info, .social ul, .monitoring, .list-items, .paralign-services {
+                display: block;
+            }
+            img{
+                margin-top: 10px;
+            }
+        }
+    
+    </style>
+</head>
+<body>
+    <main class="wrapper">
+     <!-- header section  starts here  -->
+    <header>
+
+        <!-- nav bar contains logo -->
+        <nav class="nav">
+            <!-- proftechnik logo  -->
+            <a target="_blank" href="https://aimil.com/"><img src="images/pruftechnik logo.png" alt="pruftechnik logo"></a>
+            <!-- aimil logo  -->
+            <a target="_blank" href="https://aimil.com/"><img src="images/aimil logo.jpg" alt="aimil logo" ></a>
+        </nav>
+
+    <!-- header image fig  -->
+        <figure class="figure">
+            <img class="header-image" src="images/header final.jpg" alt="conditional monitoring image">
+            <p>Welcome to the Condition Monitoring Services from Pruftechnik Aimil Pvt. Ltd.</p>
+        </figure>
+    </header>
+    <!-- main container  -->
+    <article class="container">
+
+        <!-- introduction para  -->
+
+        <section class="introduction">
+            <p>Aimil Ltd., an Instrumentation Company involved in different area of engineering consultancy & Services. We offer vibration analysis, development of condition monitoring cell, aligning machinery to its highest accuracy, removing the unbalance in the machinery parts through in-situ balancing with the help of most advance instruments.</p>
+        </section>
+         <!-- offering   -->
+        <section class="offering">
+            <h3 class="quality-heading">Our Quality offering includes:</h3>
+            <h4>Proactive Maintenance Services:</h4>
+
+                <!-- list of offerings  -->
+            <div class="list-items">
+                <ul>
+                    <li><a href="#">Precision Laser Shaft Alignment Services</a></li>
+                    <li><a href="#">Ultrasonic Thickness Measurements</a></li>
+                    <li><a href="#">Noise and Vibration Acceptance Testing</a></li>
+                    <li><a href="#">Root Cause Failure Analysis</a></li>
+                    <li><a href="#">Oil Analysis & Ferrography</a></li>
+                    <li><a href="#">Infrared Thermography Services</a></li>
+                    <li><a href="#">Insitu Dynamic Balancing Solutions</a></li>
+                    <li><a href="#">Vibration Measurement and Analysis Services</a></li>
+                    <li><a href="#">Ultrasonic Thickness Measurements</a></li>
+                    <li><a href="#">Telediagnose: Remote Vibration Monitoring for Critical equipments & Variable Speed Machines</a></li>
+                    <li><a href="#">Bore Concentricity Alignment</a></li>
+                    <li><a href="#">Shaft Centerline Detection & Orbit Analysis (also with inputs from turbine protection system)</a></li>
+                    <li><a href="#">On-site Vibration Services Contracts & Specialist on-call visits.</a></li>
+                    <li><a href="#">Mentoring program for Setting up a Conditioning Monitoring Division in customer organizations.</a></li>
+                    <li><a href="#">Mentoring Programm for Plant Maintenace</a></li>
+                    <li><a href="#">Cloud Monitoring Solution</a></li>  
+                </ul>
+                <!-- offering side images  -->
+                <div class="product-images">
+                    <img src="images/product1.jpg" alt="product image">
+                    <img src="images/product2.jpg" alt="product image">
+                    <img src="images/product3.jpg" alt="product image">
+                </div>
+            </div>
+
+            <!-- training section   -->
+
+                <div class="training">
+                    <h3>Trainings & Solutions:</h3>
+                    <ul class="training-solution">
+                        <li><a href="">Education and Training</a></li>
+                    </ul>
+                </div>
+
+                <!-- advance services section  -->
+                <div class="advance-services">
+                    <h3>Advance Services & Solutions:</h3>
+                    <ul class="advance-services-solution">
+                        <li><a href="">Temporary Online Vibration Monitoring services & remote analysis</a></li>
+                        <li><a href="">Surfaces Flatness Measurement Machine Bedplates, Foundations, Casing Surfaces, etc</a></li>
+                        <li><a href="">High-Resolution Thermography Services</a></li>
+                        <li><a href="">Bump Test (in machine operating conditions)</a></li>
+                        <li><a href="">Castor ALignment for Steel Plants</a></li>
+                        <li><a href="">Turbing Balancing Services</a></li>
+                        <li><a href="">Tosion Shaft Alignment/ Ball Mill Gear Box Alignment</a></li>
+                        <li><a href="">Turbine Alignment Services</a></li>
+                    </ul>
+                </div>
+        
+        </section>
+
+        </article>
+        <!-- paralign services  -->
+
+        <section class="roll-alignment">
+            <h3>Paralign services-Roll Alignment:</h3>
+            <div class="paralign-services">
+                <p>Roll misalignment is a root cause of wrinkles, paperfoil tears and unfitting registers of printed products. Production lines in the paper, printint, steel-rolling, foil-extrusion and converting industry today run at faster speeds than formerly, whereas the alignment methods of the rolls has not changed.</p>
+                <!-- side image  -->
+                <img src="images/roll-alignment.jpg" alt="roll alignment image">
+            </div>
+        </section>
+
+        <article class="container">
+
+
+         <!-- conditional monitoring services  -->
+
+        <section class="condition-monitoring">
+            <h3>Condition Monitoring & Services:</h3>
+            <div class="monitoring">
+                <ul>
+                    <li><a target="_blank" href="#">Vibration Measurement & Analysis</a></li>
+                    <li><a target="_blank" href="#">In-Situ Dynamic Balancing</a></li>
+                    <li><a target="_blank" href="#">Precision Laser Shaft Alignment</a></li>
+                    <li><a target="_blank" href="#">Oil Analysis & Ferrography</a></li>
+                    <li><a target="_blank" href="#">Paralign : Roll ALignment</a></li>
+                </ul>
+                <img src="images/conditional-monitoring.jpg" alt="conditional monitoring image">
+            </div>
+
+            <!-- enquiry link  -->
+            <div class="btn">
+                <a target="_blank" class="enquire-btn" href="https://www.aimil.com/">Enquire Now</a> 
+            </div>
+
+        </section>
+    
+
+    <!-- horizontal line  -->
+    <hr>
+
+    <!-- footer start here  -->
+
+    <footer class="footer">
+
+        <!-- for more information section goes here  -->
+
+        <section class="more-info">
+            <div>
+                <h3>For more information:</h3>
+            <b>Email</b>: <span>aimiltechnews@aimil.com</span><br>
+                <b>Phone</b>: <span>+9111 6131 0244</span><br>
+                <b>Website</b>: <span><a target="_blank" href="https://aimil.com">www.aimil.com</a></span>
+            </div>
+
+
+
+            <!-- social media icons goes here  -->
+            <div class="social">
+                <h3>Connect with us:</h1>
+                <ul>
+                    <li><a target="_blank" href=""><img src="images/facebook.png" alt="facebook icon" width="40px" height="40px"></a></li>
+                    <li><a target="_blank" href=""><img src="images/linkedin.png" alt="linkedin icon" width="40px" height="40px"></a></li>
+                    <li><a target="_blank" href=""><img src="images/twitter.png" alt="twitter icon" width="40px" height="40px"></a></li>
+                    <li><a target="_blank" href=""><img src="images/instagram.jpg" alt="instagram icon" width="40px" height="40px"></a></li>
+                </ul>
+            </div>
+        </section>
+        
+        
+        <!-- end footer section  -->
+    </article>
+            <div class="end-footer">
+                <p>Aimil/EN/22-23/06/28</p>
+            </div>
+    </footer>
+    </main>
+    
+</body>
+</html>
